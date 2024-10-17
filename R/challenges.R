@@ -13,9 +13,7 @@
 # }
 
 un <- function(m) {
-  rM <- rowMeans(m)
-  cM <- colMeans(m)
-  mean(rM + cM)
+  mean(rowMeans(m) + colMeans(m))
 }
 
 #' @title Second
